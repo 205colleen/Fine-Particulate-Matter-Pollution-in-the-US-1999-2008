@@ -97,7 +97,7 @@ barplot(
 )
 ```
 
-![plot of chunk plot1](figure/Rplot1.png) 
+![My image](Rplot1.png) 
 
 **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?**
 
@@ -126,7 +126,7 @@ barplot(
 )
 ```
 
-![plot of chunk plot2](figure/Rplot2.png) 
+![My image](Rplot2.png) 
 
 **Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?**
 
@@ -150,7 +150,7 @@ ggp <- ggplot(baltimoreNEI,aes(factor(year),Emissions,fill=type)) +
 print(ggp)
 ```
 
-![plot of chunk plot3](figure/Rplot3.png) 
+![My image](Rplot3.png) 
 
 **Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City?**
 
@@ -160,7 +160,6 @@ The `non-road`, `nonpoint`, `on-road` source types have all seen decreased emiss
 
 The `point` source saw a slight increase overall from 1999-2008. Also note that the `point` source saw a significant increase until 2005 at which point it decreases again by 2008 to just above the starting values. 
 
-(Note that I did not catch this originally as I started off with a log scale on Emissions)
 
 ### Question 4
 
@@ -191,7 +190,7 @@ ggp <- ggplot(combustionNEI,aes(factor(year),Emissions/10^5)) +
 print(ggp)
 ```
 
-![plot of chunk plot4](figure/Rplot4.png) 
+![My image](Rplot4.png) 
 
 **Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?**
 
@@ -231,7 +230,7 @@ ggp <- ggplot(baltimoreVehiclesNEI,aes(factor(year),Emissions)) +
 print(ggp)
 ```
 
-![plot of chunk plot5](figure/Rplot5.png) 
+![My image](Rplot5.png) 
 
 **How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?**
 
@@ -266,7 +265,7 @@ ggp <- ggplot(bothNEI, aes(x=factor(year), y=Emissions, fill=city)) +
 print(ggp)
 ```
 
-![plot of chunk plot6](figure/Rplot6.png) 
+![My image](Rplot6.png) 
 
 **Which city has seen greater changes over time in motor vehicle emissions?**
 
